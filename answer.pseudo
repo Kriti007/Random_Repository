@@ -1,0 +1,18 @@
+<!doctype HTML>
+	<head>
+		<title>Solution</title>
+	<script>
+		function change_output(){
+			var name = document.getElementById("search").value
+			var num = Math.floor(Math.random()*(15-6)+6)
+			document.getElementById("display").innerHTML = name+" "+num
+		}
+	</script>
+	</head>
+	<body>
+	<form>
+	Enter Name : <input type = "text" id = "search" onkeyup = "change_output()"></input>
+</form>
+	<div id = "display"></div>
+</body>
+</html>
